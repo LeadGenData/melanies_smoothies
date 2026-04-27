@@ -33,7 +33,7 @@ if ingredients_list:
         ingredients_string += fruit_chosen + ' '
         
         # CLEANING: Strip spaces so the API doesn't get confused
-        search_on = fruit_chosen.strip()
+        search_on = fruit_chosen.strip().lower()
         
         st.subheader(search_on + ' Nutrition Information')
         
